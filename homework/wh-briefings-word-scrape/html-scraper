@@ -1,0 +1,1 @@
+ cat data-hold/* | pup 'p text{}' | grep -oE '[[:alpha:]]{7,}' | sort | uniq -c | sort -r -n | head -n 10 | mail dun@stanford.edu -s 'Top 10 WH Words via Pup'
