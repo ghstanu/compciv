@@ -1,0 +1,13 @@
+echo '1.'
+cat data-hold/legislators-current.json | jq '.[0] .name .last'
+
+echo '2.'
+cat data-hold/legislators-current.json | jq '.[111] .id .bioguide'
+
+echo '3.'
+cat data-hold/legislators-current.json | jq '.[111]
+cat data-hold/legislators-current.json | jq '.[111]
+cat data-hold/legislators-current.json | jq '.[111]
+cat data-hold/legislators-current.json | jq '.[111]
+cat data-hold/legislators-current.json | jq '.[111]
+cat data-hold/legislators-current.json | jq '.[111]
