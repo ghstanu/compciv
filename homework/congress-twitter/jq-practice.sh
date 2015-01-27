@@ -48,7 +48,7 @@ cat data-hold/legislators-social-media.json | \
   | head -n 10
  
 echo '15.'
-cat data-hold/legislators-social-media.json |   jq --raw-output '.[]  | [.id .bioguide, .social .twitter] | @csv'  | grep -viE '\b[a-z][[:alpha:]]+'
+cat data-hold/legislators-social-media.json |   jq --raw-output '.[]  | [.id .bioguide, .social .twitter] | @csv'  | grep -v ',"'
 
 echo '16.'
 cat data-hold/congress-twitter-profiles.json | \
